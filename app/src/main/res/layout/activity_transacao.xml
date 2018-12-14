@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/coordinatorLayoutTransacao"
+    tools:context=".activity.TransactionActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarTransacao"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/holo_blue_light"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fab_size_normal"
+            android:maxHeight="@dimen/fab_size_normal"
+            app:srcCompat="@drawable/img_57360" />
+
+        <TextView
+            android:id="@+id/textViewConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONTA"></TextView>
+
+        <Spinner
+            android:id="@+id/spinnerContaTrans"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/textViewCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CATEGORIA"></TextView>
+
+        <Spinner
+            android:id="@+id/spinnerCategoriaTrans"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+        <TextView
+            android:id="@+id/textViewDescrTrans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DESCRIÇÃO"></TextView>
+
+        <EditText
+            android:id="@+id/editTextDescrTrans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
+
+        <TextView
+            android:id="@+id/textViewDtTrans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/data"></TextView>
+
+        <EditText
+            android:id="@+id/editTexDtTrans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/textViewValorTrans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VALOR"></TextView>
+
+        <EditText
+            android:id="@+id/editTextValorTrans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"></EditText>
+
+        <CheckBox
+            android:id="@+id/checkBoxRepeticoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/repetir" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/linearLayoutRepeticoes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="FORMA"></TextView>
+
+            <Spinner
+                android:id="@+id/spinnerPeriodoRepeticoes"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:entries="@array/periodo_repeticoes"></Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="VEZES"></TextView>
+
+            <NumberPicker
+                android:id="@+id/numberPickerRepeticoes"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

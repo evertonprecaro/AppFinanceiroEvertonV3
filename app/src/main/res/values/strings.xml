@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">APP Financeiro</string>
+    <string name="opcoes">O que deseja fazer?</string>
+    <string name="title_activity_account">Nova conta</string>
+    <string name="title_activity_transaction">Efetuar transacao</string>
+    <string name="salvar">Salvar</string>
+    <string name="excluir">Excluir</string>
+    <string name="conta_adicionada">Conta adicionada</string>
+    <string name="credito_realizado">Crédito realizado</string>
+    <string name="conta_removida">Conta removida</string>
+    <string name="alteracoes_realizadas">Alteracoes realizadas na conta</string>
+    <string name="lista_contas_vazia">Lista de contas vazia</string>
+    <string name="debitar">Debitar</string>
+    <string name="depositar">Depositar</string>
+    <string name="nenhuma_conta_selecionada_cadastre_uma_conta">Não há contas cadastradas, cadastre uma conta</string>
+    <string name="repetir">Repetições</string>
+    <string name="data">Data</string>
+    <string name="digite_o_valor_antes">Digite o valor antes</string>
+    <string-array name="periodo_repeticoes">
+        <item>Diário</item>
+        <item>Semanal</item>
+        <item>Mensal</item>
+        <item>Anual</item>
+    </string-array>
+
+</resources>
